@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @song.id %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @song.title %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%= @song.author %>
+</p>
+
+<p>
+  <b>Lyric:</b>
+  <%= @song.chord.lyric.gsub('\n', 'asdfasdf') %>
+</p>
+
+
+<%= link_to 'Edit', edit_song_path(@song) %> |
+<%= link_to 'Back', songs_path %>

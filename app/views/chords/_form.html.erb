@@ -1,0 +1,29 @@
+<%= form_for(@chord) do |f| %>
+  <% if @chord.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@chord.errors.count, "error") %> prohibited this chord from being saved:</h2>
+
+      <ul>
+      <% @chord.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :song_id %><br />
+    <%= f.text_field :song_id %>
+  </div>
+  <div class="field">
+    <%= f.label :lyric %><br />
+    <%= f.text_area :lyric %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
