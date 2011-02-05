@@ -15,6 +15,11 @@
   <%= @song.author %>
 </p>
 
+<p>
+  <b>Lyric:</b>
+  <%= @song.chord.lyric.gsub('\n', 'asdfasdf') %>
+</p>
+
 
 <%= link_to 'Edit', edit_song_path(@song) %> |
 <%= link_to 'Back', songs_path %>

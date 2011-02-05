@@ -12,10 +12,6 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :id %><br />
-    <%= f.text_field :id %>
-  </div>
-  <div class="field">
     <%= f.label :title %><br />
     <%= f.text_field :title %>
   </div>
@@ -23,12 +19,10 @@
     <%= f.label :author %><br />
     <%= f.text_field :author %>
   </div>
-  <%= f.fields_for :chord_attributes do |c| %>
-    <div class="field">
-      <%= c.label :lyric %><br />
-      <%= c.text_area :lyric, :style => "text-align: center" %>
-    </div>
-  <% end %>
+  <div class="field">
+    <%= f.label :lyric %><br />
+    <%= f.text_area :lyric, :style => "font-family: lucida console;" %>
+  </div>
   
   <div class="actions">
     <%= f.submit %>

@@ -1,4 +1,4 @@
-Cancancion::Application.routes.draw do
+Choiropolis::Application.routes.draw do
   resources :chords
 
   resources :songs

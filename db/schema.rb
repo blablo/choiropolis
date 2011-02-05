@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(:version => 20101207001352) do
   create_table "songs", :force => true do |t|
     t.string   "title"
     t.string   "author"
+    t.text     "lyric"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -4,7 +4,7 @@ class CreateSongs < ActiveRecord::Migration
       t.integer :id
       t.string :title
       t.string :author
-
+      t.text :lyric
       t.timestamps
     end
   end

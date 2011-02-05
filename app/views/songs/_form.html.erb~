@@ -23,6 +23,13 @@
     <%= f.label :author %><br />
     <%= f.text_field :author %>
   </div>
+  <%= f.fields_for :chord_attributes do |c| %>
+    <div class="field">
+      <%= c.label :lyric %><br />
+      <%= c.text_area :lyric, :style => "text-align: center" %>
+    </div>
+  <% end %>
+  
   <div class="actions">
     <%= f.submit %>
   </div>

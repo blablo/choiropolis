@@ -2,10 +2,35 @@
 
 one:
   id: 1
-  title: MyString
-  author: MyString
+  title: En la Tierra Habrá
+  author: sabe
+  lyric: "                  
+D                    A\n
+// EN LA TIERRA HABRÁ\n
+              G                         D                          G\n
+CONOCIMIENTO DE LA GLORIA DEL SEÑOR\n
+                    D            Em              A\n
+COMO LAS AGUAS CUBREN EL MAR //\n
+\n
+G                             A                         D\n
+VÉ, PROCLAMALE ENTRE LAS NACIONES\n
+G                         A              D\n
+Y DÁ A CONOCER DE SU REINO\n
+      G            A            D            G          A           Bm\n
+SU PUEBLO SIN TEMOR, PROCLAMA AL SEÑOR\n
+        Em                                                A\n
+Y LA TIERRA DE SU GLORIA LLENARA\n
+\n
+                 D                    A\n
+// EN LA TIERRA HABRÁ\n
+              G                         D                          G\n
+CONOCIMIENTO DE LA GLORIA DEL SEÑOR\n
+                    D            Em              A\n
+COMO LAS AGUAS CUBREN EL MAR //\n
+\n
+G                 D            Em         A     D\n
+COMO LAS AGUAS CUBREN EL MAR\n
+G                   D       Em       A                 D\n
+COMO LAS AGUA CU - BREN	EL	MA -- R"
 
-two:
-  id: 1
-  title: MyString
-  author: MyString
+
