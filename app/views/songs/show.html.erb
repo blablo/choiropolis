@@ -21,10 +21,17 @@
     font-size: 14px;
     line-height: 1.4em;
     white-space: pre;">
-  <%= @song.lyric %>
+  <%= chordify(@song.lyric) %>
   </pre>
 </p>
 
+<% if user_signed_in? %>
+  <% form_for @songbook_song do |f| %>
+    <%= f.hidden_field :song_id, :value => @song.id %>
+    <%= f.hidden_field :songbook_id, :value => Songbook.last.id %>
+    <%= f.submit 'Agregar al songbook' %>
+  <% end %>
+<% end %>
 
 <%= link_to 'Edit', edit_song_path(@song) %> |
 <%= link_to 'Back', songs_path %>

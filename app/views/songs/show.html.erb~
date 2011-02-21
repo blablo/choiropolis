@@ -17,7 +17,12 @@
 
 <p>
   <b>Lyric:</b>
-  <%= @song.chord.lyric.gsub('\n', 'asdfasdf') %>
+  <pre style="    font-family: 'Lucida Console',Monaco,monospace;
+    font-size: 14px;
+    line-height: 1.4em;
+    white-space: pre;">
+  <%= chordify(@song.lyric) %>
+  </pre>
 </p>
 
 

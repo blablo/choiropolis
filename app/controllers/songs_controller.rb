@@ -1,4 +1,6 @@
 class SongsController < ApplicationController
+  before_filter :authenticate_user!, :only => [:edit, :destroy]
+  
   # GET /songs
   # GET /songs.xml
   def index
@@ -14,6 +16,7 @@ class SongsController < ApplicationController
   # GET /songs/1.xml
   def show
     @song = Song.find(params[:id])
+    @songbook_song = SongbookSong.new
 
     respond_to do |format|
       format.html # show.html.erb
